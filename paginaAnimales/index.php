@@ -20,11 +20,15 @@
 			<a href="#">Inicio</a>
 			<a href="#">Servicios</a>
 			<a href="#">Productos</a>
-			<a href="#">Adopción</a>
+			<a href="internas/adopcion.php">Adopción</a>
 			<a href="#">Contactos</a>
 		</nav>
 	</header>
 	<section class="sliderPrincipal">
+		<div class="cuadro">
+			<h2>Proyecto adopcion de mascotas</h2>
+			<button>ADOPTANOS</button>
+		</div>
 		<img src="images/perro.jpg">
 	</section>
 	<section class="titulo">
@@ -41,30 +45,44 @@
 	<section class="adopcion2">
 		<img src="images/perro2.jpg">
 		<section class="cardog2">
-			<h3> Hola </h3>
-			<p>esto es una prueba solo para ver si sirve </p>
+			<h3> ¿Que es un perro? </h3>
+			<p> El perro, llamado perro doméstico o can, y en algunos lugares coloquialmente llamado chucho, tuso, choco, entre otros; es un mamífero carnívoro de la familia de los cánidos, que constituye una especie del género Canis.</p>
 			<button class="centerB"> Mas información </button>
 		</section>
 	</section>
 	<section class="doctor">
 		<section class="doctor1">
-			<img src="images/doctor1.jpg">
+				<h3>Dr. Gerald Jaramillo</h3>
+				<p>Se encarga de vacular a los perros</p>
 		</section>
 		<section class="doctor2">
 			<img src="images/doctor2.jpg">
+			<section class="sub2">
+				<h3>Dr. Jamil Quituizaca</h3>
+				<p>Especialista en el baño de animales</p>
+			</section>
 		</section>
 		<section class="doctor3">
 			<img src="images/doctor3.jpg">
+			<section class="">
+				
+			</section>
+			<h3>Dr. Jhoel Ordoñez</h3>
+			<p>Especilista en la alimentación</p>
 		</section>
 		<section class="doctor4">
 			<img src="images/doctor4.jpg">
+			<h3>Dr. Edgar Martinez</h3>
+			<p>Encargado en la esterilización</p>
 		</section>
 	</section>
-	<section class="doctor2">
-		
-	</section>
 	<section class="sponsor">
-		<h3>Sponsor</h3>
+		<section class="logoDog">
+			<img src="images/logotipoPet.png">
+		</section>
+		<section class="logoUtpl">
+			<img src="images/logo_blanco_utpl.jpeg">
+		</section>
 	</section>
 	<footer class="piePagina">
 		<section class="derechos">

@@ -49,7 +49,7 @@ body{
 	color: #65524D;
 }
 
-.contenedor .cabeceraPrincipal nav a:  hover{ /* El hover es para hacer el cuadrito en negro*/
+.contenedor .cabeceraPrincipal nav a:hover{ /* El hover es para hacer el cuadrito en negro*/
 	background-color: #65524D;
 	color: #fff;
 }
@@ -61,8 +61,49 @@ body{
 	background-color: #333;
 }
 
+.contenedor .sliderPrincipal .cuadro{
+	position: absolute;
+	background-color: #fff;
+	color: black;
+	opacity: 50%;
+	width: 55%;
+	height: 25%;
+	margin: 250px 50px 100px 100px;
+}
+
+.contenedor .sliderPrincipal .cuadro h2{
+	text-align: center;
+}
+
+.contenedor .sliderPrincipal .cuadro button{
+	padding: 5px 10px;
+	background-color: #B5EF8A;
+	border-color: #B5EF8A;
+	color: #605B5B;
+	margin: 10px 20px 10px 350px;
+}
+
 .contenedor .sliderPrincipal img{
 	width: 100%;
+}
+
+/*  Contenido main */
+main{
+	grid-area: slider;
+	margin: 0 auto;
+	width: 90%;
+	padding: 2em 0;
+}
+
+main h2{
+	color: #817E9F;
+	font-size: 2em;
+}
+
+main p{
+	color: #605B5B;
+	font-size: 1em;
+	line-height: 28px;
 }
 
 .contenedor .titulo{
@@ -99,6 +140,10 @@ body{
 	color: #605B5B;
 }
 
+.contenedor .adopcion1 .cardog button{
+	padding: 5px 10px;
+	margin: 10px 20px 10px 180px;
+}
 
 .contenedor .adopcion2{
 	grid-area: adopta2;
@@ -120,6 +165,10 @@ body{
 	color: #605B5B;
 }
 
+.contenedor .adopcion2 .cardog2 button{
+	padding: 5px 10px;
+	margin: 10px 20px 10px 180px;
+}
 
 .contenedor .doctor{
 	grid-area: doctor;
@@ -127,28 +176,47 @@ body{
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 40px;
+
 }
 
+.contenedor .doctor .doctor1 {
+	background-image: url("../images/doctor1.jpg");
+	background-repeat: no-repeat;
+	justify-content: space-between;
+}
 
-.contenedor .doctor1{
+.contenedor .doctor .doctor1 .sub1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
 
 }
 
 .contenedor .doctor2{
-
+	padding: 5px 10px;
 } 	
 
 .contenedor .doctor3{
-
+	padding: 5px 10px;
 }
 
 .contenedor .doctor4{
-
+	padding: 5px 10px;
 }
 
 .contenedor .sponsor{
 	grid-area: sponsor;
 	background-color: #333;
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor .sponsor .logoDog{
+	padding: 120px 40px;
+}
+
+.contenedor .sponsor .logoUtpl{
+	padding: 50px 40px;
 }
 
 /* Footer */
@@ -176,6 +244,49 @@ body{
 	color: #fff;
 }
 
-.contenedor .piePagina .redesSociales a:  hover{
+.contenedor .piePagina .redesSociales a:hover{
 	
+}
+
+/*  Adopcion formulario */
+
+.grupoInput{
+	padding: 10px;
+}
+
+.grupoInput label{
+	display: block;
+}
+
+.grupInput input[type = text] , .grupInput input[type = email], .grupInput input[type = number], .grupInput input[type = date]{
+	width: 90%;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.centrado{
+	text-align: center;
+}
+
+.boton{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.boton:hover{
+	background-color: #3C8D40;
+}
+
+.alerta{
+	color: red;
 }
