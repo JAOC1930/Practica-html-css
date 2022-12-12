@@ -18,10 +18,11 @@
 		<section class="logotipo"><img src="images/logotipoPet.png"></section>
 		<nav class="menuPrincipal">
 			<a href="#">Inicio</a>
-			<a href="#">Servicios</a>
-			<a href="#">Productos</a>
+			<a href="internas/servicios.php">Servicios</a>
+			<a href="internas/borrar.php">Borrar Personal</a>
 			<a href="internas/adopcion.php">Adopción</a>
-			<a href="#">Contactos</a>
+			<a href="internas/personal.php">Personal</a>
+			<a href="internas/postulacion.php">Postulación</a>
 		</nav>
 	</header>
 	<section class="sliderPrincipal">

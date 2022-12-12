@@ -19,37 +19,17 @@
 		<nav class="menuPrincipal">
 			<a href="../index.php">Inicio</a>
 			<a href="servicios.php">Servicios</a>
-			<a href="borrar.php">Borrar Personal</a>
-			<a href="#">Adopción</a>
+			<a href="#">Borrar Personal</a>
+			<a href="adopcion.php">Adopción</a>
 			<a href="#">Contactos</a>
 		</nav>
 	</header>
 	<main>
-		<h2>Formulario de adopcion</h2>
-		<form method="post" action="procesar.php">
+		<h2>Ingrese el Id a eliminar</h2>
+		<form method="post" action="borrarId.php">
 			<div class="grupInput">
-				<label form="nombres">Nombre <span class="alerta">*</span></label>
-				<input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres" required/>
-			</div>
-			<div class="grupInput">
-				<label form="apellidos">Apellido <span class="alerta">*</span></label>
-				<input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
-			</div>
-			<div class="grupInput">
-				<label form="correo">Correo <span class="alerta">*</span></label>
-				<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
-			</div>
-			<div class="grupInput">
-				<label form="telefono">Telefono</label>
-				<input type="number" name="telefono" id="telefono" placeholder="Ingrese sus telefono">
-			</div>
-			<div class="grupInput">
-				<label form="direccion">Dirección</label>
-				<input type="text" name="direccion" id="direccion" placeholder="Ingrese sus direccion">
-			</div>
-			<div class="grupInput">
-				<label form="fecha">Fecha de nacimiento</label>
-				<input type="date" name="fecha" id="fecha" placeholder="Ingrese sus fecha">
+				<label form="idpersonal">Id del personal <span class="alerta">*</span></label>
+				<input type="number" name="idpersonal" id="idpersonal" placeholder="Ingrese sus nombres" required/>
 			</div>
 			<div class="centrado">
 				<button class="boton" type="submit">Guardar</button>

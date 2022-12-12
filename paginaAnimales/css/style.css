@@ -260,8 +260,9 @@ main p{
 
 .grupInput input[type = text] , .grupInput input[type = email], .grupInput input[type = number], .grupInput input[type = date]{
 	width: 90%;
-	padding: 15px;
-	border-radius: 5px;
+	padding: 15px 20px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
 }
 
 .centrado{

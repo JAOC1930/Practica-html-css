@@ -25,8 +25,8 @@
 		</nav>
 	</header>
 	<main>
-		<h2>Formulario de adopcion</h2>
-		<form method="post" action="procesar.php">
+		<h2>Postulación</h2>
+		<form method="post" action="procesarM.php">
 			<div class="grupInput">
 				<label form="nombres">Nombre <span class="alerta">*</span></label>
 				<input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres" required/>
@@ -35,21 +35,32 @@
 				<label form="apellidos">Apellido <span class="alerta">*</span></label>
 				<input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
 			</div>
+            <div class="grupInput">
+				<label form="direccion">Dirección</label>
+				<input type="text" name="direccion" id="direccion" placeholder="Ingrese sus direccion">
+			</div>
 			<div class="grupInput">
 				<label form="correo">Correo <span class="alerta">*</span></label>
 				<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
 			</div>
 			<div class="grupInput">
-				<label form="telefono">Telefono</label>
-				<input type="number" name="telefono" id="telefono" placeholder="Ingrese sus telefono">
+				<label form="cedula">Cedula</label>
+				<input type="number" name="cedula" id="cedula" placeholder="Ingrese sus cedula">
 			</div>
-			<div class="grupInput">
-				<label form="direccion">Dirección</label>
-				<input type="text" name="direccion" id="direccion" placeholder="Ingrese sus direccion">
-			</div>
-			<div class="grupInput">
-				<label form="fecha">Fecha de nacimiento</label>
-				<input type="date" name="fecha" id="fecha" placeholder="Ingrese sus fecha">
+            <div class="grupInput">
+				<label form="mascota">Mascota</label>
+                <select name= "select">
+                    <option value="">Seleccione:</option>
+                    <?php
+                    $query = $db->consulta("SELECT * FROM nombres");
+                    $query->execute();
+                    $data = $query->fetchAll();
+
+                    foreach ($data as $valores):
+                    echo '<option value="'.$valores["id"].'">'.$valores["nombres"].'</option>';
+                    endforeach;
+                    ?>
+				</select>
 			</div>
 			<div class="centrado">
 				<button class="boton" type="submit">Guardar</button>
